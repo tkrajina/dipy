@@ -1,0 +1,15 @@
+static/tmp/
+tmp/*
+php/gpsbabel-api/tmp/
+php/trackprofiler_files/tmp/
+deploy/*
+cache/*py
+archive/*
+*.swp
+*.swo
+*.pyc
+*.orig
+tags
+q.*
+# Generated from __app.yaml on every build:
+app.yaml
