@@ -51,3 +51,8 @@ class Test(object):
 
 test = Test()
 test.orm_handler.handle_orm()
+
+# Get a DI handled object directly:
+
+orm_handler = mod_di.get('ormhandler')
+orm_handler.handle_orm()

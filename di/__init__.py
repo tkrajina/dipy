@@ -33,3 +33,8 @@ def init(dependency_conf):
                 di_object = attr()
                 DI_OBJECTS[di_object_name] = di_object
     # TODO: Check for cyclical dependencies!
+
+def get(di_object_name):
+    if not DI_OBJECTS.has_key(di_object_name):
+        raise Exception, 'Unknown dependency object name %s' % di_object_name
+    return DI_OBJECTS[di_object_name]
